@@ -20,24 +20,27 @@ export default function Home() {
       // other easing functions (including visualizer): gogle: gsap Eases
     });
 
-    gsap.from(headingRef.current, {
-      y: "-200", // yPercent for percent value
+    gsap.to(headingRef.current, {
+      y: "200", // yPercent for percent value
       duration: 2,
-      ease: "elastic.out(1, 0.3)"
-    })
-   
-    gsap.to(progressRef.current, {
-      height: "100%",
-      delay: 2,
-      top: 0,
-      backgroundColor: "white"
-    })
+      ease: "elastic.out(1, 0.3)",
+    });
 
+    // gsap.to(progressRef.current, {
+    //   height: "100%",
+    //   delay: 2,
+    //   top: 0,
+    //   backgroundColor: "white"
+    // })
   });
 
   return (
     <main>
-      <h1 ref={headingRef} className="text-[20rem] opacity-[10%] text-center mt-[18%]">BORING</h1>
+      <div className="flex h-screen justify-center">
+        <h1  style={{ fontFamily: "Bebas Neue" }} ref={headingRef} className="text-[25vw] opacity-[10%] text-center ">
+          BORING
+        </h1>
+      </div>
       <div ref={progressRef} className="progress bg-[#A1BCFF] h-[3px] w-0 absolute top-[50%]"></div>
     </main>
   );
