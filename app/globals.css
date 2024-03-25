@@ -2,22 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* styles/global.css */
-
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
-
 body {
   margin: 0;
   height: 100vh;
-  background: #2864FF;
+  background: #2864ff;
   color: white;
-  font-family: 'Bebas Neue', sans-serif;
 }
 
-@font-face {
-  font-family: 'Bebas Neue';
-  src: url('/fonts/BebasNeue/BebasNeue-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-display: swap;
+.bebas {
+  font-family: var(--font-bebas);
 }

@@ -21,23 +21,23 @@ export default function Home() {
     });
 
     gsap.to(headingRef.current, {
-      y: "200", // yPercent for percent value
+      yPercent: 25, // yPercent for percent value
       duration: 2,
       ease: "elastic.out(1, 0.3)",
     });
 
-    // gsap.to(progressRef.current, {
-    //   height: "100%",
-    //   delay: 2,
-    //   top: 0,
-    //   backgroundColor: "white"
-    // })
+    gsap.to(progressRef.current, {
+      height: "100%",
+      delay: 2,
+      top: 0,
+      backgroundColor: "white"
+    })
   });
 
   return (
     <main>
       <div className="flex h-screen justify-center">
-        <h1  style={{ fontFamily: "Bebas Neue" }} ref={headingRef} className="text-[25vw] opacity-[10%] text-center ">
+        <h1 ref={headingRef} className="bebas text-[25vw] opacity-[10%] text-center ">
           BORING
         </h1>
       </div>
