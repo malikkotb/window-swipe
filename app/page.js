@@ -36,7 +36,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className="flex h-screen justify-center">
+      <div className="flex h-screen justify-center bg-red-500">
         <h1 ref={headingRef} className="bebas text-[25vw] opacity-[10%] text-center ">
           BORING
         </h1>

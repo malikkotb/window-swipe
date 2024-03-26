@@ -5,10 +5,13 @@
 body {
   margin: 0;
   height: 100vh;
-  background: #2864ff;
-  color: white;
+  /* background: #2864ff; */
 }
 
 .bebas {
   font-family: var(--font-bebas);
+}
+
+.playfair {
+  font-family: var(--font-playfair);
 }
