@@ -15,3 +15,16 @@ body {
 .playfair {
   font-family: var(--font-playfair);
 }
+
+.stagger-tween-p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: bold;
+  font-size: 3rem;
+  font-style: italic;
+  margin: 0;
+}
+
+
