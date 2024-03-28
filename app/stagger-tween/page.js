@@ -34,12 +34,33 @@ export default function page() {
       scale: 1,
       duration: 2,
     });
-    gsap.to("p", {
-      opacity: 1,
-      y: 50,
-      stagger: .3,
-      duration: 2,
-    });
+    // gsap.to("p", {
+    //   opacity: 1,
+    //   y: 50,
+    //   stagger: 0.3,
+    //   duration: 2,
+    // });
+
+    // there is also the fromTo() method in gsap
+    // fromTo() takes in 2 objects after the class selector
+    // "from" properties, and "to" properties of a single element
+    // => from and to properties can be set of a single element
+
+    gsap.fromTo(
+      "p",
+      {
+        y: -50,
+        x: -50,
+      },
+      {
+        // like this it will travel 100 pixels ( from -50, to +50)
+        y: 50,
+        x: 0,
+        opacity: 1,
+        stagger: 0.3,
+        duration: 2,
+      }
+    );
   }
 
   //   gsap.to(['h1', 'span'], {}) // how multiple elements can be selected at once
