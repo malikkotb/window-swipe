@@ -6,19 +6,16 @@ export default function page() {
   const containerRef = useRef(null);
 
   useEffect(() => {
-
     gsap.set("img", {
-        y: -450,
-    })
-
-    gsap.to("img", {
-      duration: 2,
-      rotate: 20,
+      yPercent: -600,
+      rotationZ: -295,
     });
 
     gsap.to("img", {
-      duration: 2.5,
-      ease: "elastic.out(1,0.3)",
+      duration: 2,
+      ease: "bounce.out",
+      rotationZ: 0,
+      yPercent: 0,
       y: 0,
     });
 
