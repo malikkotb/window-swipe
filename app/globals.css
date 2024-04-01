@@ -16,6 +16,10 @@ body {
   font-family: var(--font-playfair);
 }
 
+mask {
+  overflow: hidden;
+}
+
 .stagger-tween-p {
   position: absolute;
   top: 50%;
